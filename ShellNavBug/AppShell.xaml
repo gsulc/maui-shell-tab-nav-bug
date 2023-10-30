@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="ShellNavBug.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ShellNavBug"
+    Shell.FlyoutBehavior="Disabled"
+    Title="ShellNavBug">
+
+    <TabBar>
+        <ShellContent
+            Title="Page A"
+            ContentTemplate="{DataTemplate local:PageA}"
+            Route="PageA" />
+        <ShellContent
+            Title="Page B"
+            ContentTemplate="{DataTemplate local:PageB}"
+            Route="PageB" />
+        <ShellContent
+            Title="Page C"
+            ContentTemplate="{DataTemplate local:PageC}"
+            Route="PageC" />
+    </TabBar>
+
+</Shell>
+
